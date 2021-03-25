@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Wrapper for the width */
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/********************************* Background Image CSS Starts *************************************/
+
+.main-shape {
+    content: "";
+    background: url('../img/left-rec.png') no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    left: -639px;
+    top: -137px;
+    display: inline-block;
+    width: 839px;
+    height: 839px;
+    z-index: -1;
+}
+
+.main-shape1 {
+    content: "";
+    background: url('../img/right-rec.png');
+    background-size: cover;
+    position: absolute;
+    right: -500px;
+    top: -690px;
+    display: inline-block;
+    width: 1801px;
+    height: 1801px;
+    z-index: -1;
+}
+
+/********************************* Background Image CSS Ends *************************************/
+
+/********************************* Logo Content Header CSS Starts *************************************/
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.navbar-brand {
+    margin-top: 37px;
+    margin-left: 57px;
+    width: 285px;
+    height: 122px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 515px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mr-40 {
+    margin-right: 40px !important;
+}
+
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    /* padding: 2em 10%; */
+    /* background: #2c3e50; */
+    color: #fff;
+}
+
+header img, header nav {
+    display: inline-block;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/********************************* Logo Content Header CSS Ends *************************************/
+
+/********************************* Top NavBar CSS Starts *************************************/
+
+.top-head {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mr-20 {
+    margin-right: 20px !important;
+}
+
+.top-head>ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.top-head>ul>li {
+    list-style: none;
+}
+
+.top-head>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/********************************* Top NavBar CSS Ends *************************************/
+
+.banner {
+    margin: 321px 0 0;
+}
+
+.heading {
+    margin-left: 60px;
+    font-size: 67px;
+    font-weight: bold;
+    color: #03045E;
+}
+
+.content>p {
+    margin-left: 60px;
+    font-size: 19px;
+    color: #0A0A0A;
+}
+
+.content>p>span {
+    /* margin-left: 60px; */
+    font-size: 42px;
+    color: #0A0A0A;
+}
+
+.bannerButton {
+    background-color: #03045E;
+    width: 299px;
+    height: 70px;
+    border-radius: 35px;
+    margin-left: 60px;
+    margin-top: 42px;
+}
+
+.banner-image {
+    position: relative;
+    top: -207px;
+    left: -274px;
+}
+
+.button1 {
+    margin-left: 600px;
+    width: 88px;
+    height: 88px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    /* border-radius: 22px; */
+    /* background:  0% 0% no-repeat padding-box; */
+}
+
+.button2 {
+    margin-left: 535px;
+    width: 88px;
+    height: 88px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    /* background: 0% 0% no-repeat padding-box; */
+    /* border-radius: 22px; */
+}
+
+.banner-image>.image-box {
+    margin-top: -274px;
+    margin-left: -659px;
+    margin-right: 150px;
+    width: 800px !important;
+    height: 700px !important;
+    -webkit-mask-box-image: url('../img/imagebox.png');
+    float: right;
+}
+
+.banner-image>.image-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .banner>.banner-image>.animated-box {
+    position: absolute;
+    width: 281px;
+    height: 281px;
+    border: 5px solid var(--white-color);
+    border-radius: 60px;
+    transform: rotate(45deg);
+    bottom: 361px;
+    right: 65px;
+    animation: 5s rotate infinite linear;
+} */
+
+.animated-box {
+    position: absolute;
+    width: 234px;
+    height: 234px;
+    border: 5px solid white;
+    border-radius: 60px;
+    transform: rotate(45deg);
+    /* bottom: 361px;
+    right: 65px; */
+    margin-left: 1000px;
+    margin-top: -400px;
+    animation: 5s rotate infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .morebtn {
+    width: 11px;
+    height: 20px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    background: 0% 0% no-repeat padding-box;
+}
+
+.lessbtn {
+    width: 11px;
+    height: 20px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    background: 0% 0% no-repeat padding-box;
+} */
+
+.left-shape {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    margin-left: -658.005859375px;
+    margin-top: -100px;
+    display: inline-block;
+    width: 1317px;
+    height: 1361px;
+    /* z-index: -1; */
+}
+
+/* .right-shape{
+        content: "";
+        background: url(../img/left.png) no-repeat left bottom;
+        background-size: cover;
+        position: absolute;
+        right: -480px;
+        top: -493px;
+        display: inline-block;
+        width: 599px;
+        height: 599px;
+        z-index: -1;
+} */
