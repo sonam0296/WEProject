@@ -27,9 +27,9 @@ const Header = () => {
                 <a className="navbar-brand" href="#">
                     <img src="assets/img/logo.png" />
                 </a>
-                <nav className="navbar navbar-expand-lg custom_container">
+                <nav className="navbar navbar-expand-lg custom_container" style={{marginTop:"-50px", marginRight:"70px"}}>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav ml-auto" >
                             <li className="nav-item active">
                                 <a className="nav-link mr-40" href="#">Home</a>
                             </li>

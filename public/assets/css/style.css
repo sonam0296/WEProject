@@ -88,6 +88,7 @@ header {
     text-align: justify;
     letter-spacing: 1px;
     height: 8em;
+    margin-top: -50px;
     /* padding: 2em 10%; */
     /* background: #2c3e50; */
     color: #fff;
@@ -179,27 +180,27 @@ header::after {
     margin-left: 600px;
     width: 88px;
     height: 88px;
-    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    /* transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0); */
     /* border-radius: 22px; */
     /* background:  0% 0% no-repeat padding-box; */
 }
 
 .button2 {
-    margin-left: 535px;
+    margin-left: -150px;
+    margin-top: -200px !important;
     width: 88px;
     height: 88px;
-    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
     /* background: 0% 0% no-repeat padding-box; */
     /* border-radius: 22px; */
 }
 
 .banner-image>.image-box {
-    margin-top: -274px;
+    margin-top: 150px;
     margin-left: -659px;
-    margin-right: 150px;
-    width: 800px !important;
-    height: 700px !important;
-    -webkit-mask-box-image: url('../img/imagebox.png');
+    margin-right: 200px;
+    width: 747px !important;
+    height: 747px !important;
+    -webkit-mask-box-image: url('../img/banner-img.svg');
     float: right;
 }
 
@@ -207,6 +208,18 @@ header::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.banner-button1 {
+    margin-top: -200px;
+    margin-left: 20px;
+    /* transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0); */
+}
+
+.banner-button2 {
+    margin-top: -120px;
+    margin-right: 600px;
+    /* margin-left: -100px; */
 }
 
 /* .banner>.banner-image>.animated-box {
@@ -228,10 +241,10 @@ header::after {
     border: 5px solid white;
     border-radius: 60px;
     transform: rotate(45deg);
-    /* bottom: 361px;
-    right: 65px; */
-    margin-left: 1000px;
-    margin-top: -400px;
+    /* margin-bottom: 800px;
+    margin-right: 300px; */
+    margin-left: 50px;
+    margin-top: -50px;
     animation: 5s rotate infinite linear;
 }
 
@@ -258,28 +271,442 @@ header::after {
     background: 0% 0% no-repeat padding-box;
 } */
 
+/********************************* About CSS Starts *************************************/
+
 .left-shape {
     content: "";
     background: url(../img/left.png) no-repeat left bottom;
     background-size: cover;
     position: absolute;
     margin-left: -658.005859375px;
-    margin-top: -100px;
+    margin-top: -300px;
     display: inline-block;
     width: 1317px;
     height: 1361px;
     /* z-index: -1; */
 }
 
-/* .right-shape{
-        content: "";
-        background: url(../img/left.png) no-repeat left bottom;
-        background-size: cover;
-        position: absolute;
-        right: -480px;
-        top: -493px;
-        display: inline-block;
-        width: 599px;
-        height: 599px;
-        z-index: -1;
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-shape {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    right: -250px;
+    top: 1900px;
+    display: inline-block;
+    width: 599px;
+    height: 599px;
+    z-index: -1;
+}
+
+/* Bootstrap card */
+
+.imageIcons {
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+}
+
+.card-block {
+    border-radius: 60px !important;
+    width: 312px;
+    height: 312px;
+    padding: 20px;
+    border: none
+}
+
+.item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item-card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item-card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.item-card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710
+}
+
+.card-title {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: #03045E !important;
+    color: white;
+    background: url(../img/creat1.png) no-repeat;
+    /* width: 90px;
+    height: 90px; */
+    display: block;
+    margin: 0 auto;
+}
+
+.card-text {
+    height: 80px;
+    text-align: center;
+    font: 14px;
+    letter-spacing: 0.56px;
+    color: #8B8D9F;
+}
+
+.card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+    /* border-radius: 25px; */
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.info {
+    float: right;
+    margin-top: -500px;
+    margin-right: 100px;
+    /* margin-left: -200px !important; */
+}
+
+/* .click1{
+    margin-left: 900px;
+}
+.click2{
+    margin-left: 1050px;
+    margin-top: 1405px !important;
 } */
+
+.banner-button {
+    margin-left: 900px;
+    margin-top: -200px;
+}
+
+/*  */
+
+.empty {
+    background: url(../img/empty.png);
+    width: 330px;
+    height: 330px;
+    margin-left: 1350px;
+    margin-top: 200px;
+}
+
+/********************************* About CSS Ends *************************************/
+
+/********************************* Portfolio CSS Starts *************************************/
+
+.portfolio {
+    font-size: 34px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #03045E;
+    font-weight: bold;
+}
+
+.design {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.develop {
+    border-radius: 35px;
+    background: #03045E 0% 0% no-repeat padding-box;
+    width: 299px;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.customization {
+    letter-spacing: 2px;
+    color: #060606;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.work {
+    font-size: 18px;
+    color: #828282;
+    letter-spacing: 0.72px;
+    text-align: left;
+}
+
+.readMore {
+    letter-spacing: 0.64px;
+    color: #03045E;
+    text-align: left;
+    font-size: 16px;
+}
+
+.left-rect {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    /* right: -250px; */
+    margin-left: -300px;
+    top: 2600px;
+    display: inline-block;
+    width: 599px;
+    height: 599px;
+    z-index: -1;
+}
+
+/* control slider */
+
+.slideBox {
+    position: absolute;
+    width: 150px;
+}
+
+.img1 {
+    background: url(../img/img2.jpg) no-repeat;
+    width: 400px;
+    height: 400px;
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: cover; */
+    border-radius: 60px;
+    margin-left: 200px;
+}
+
+#slideBox1 {
+    left: 0;
+}
+
+#slideBox2 {
+    left: 150px;
+}
+
+#slideBox3 {
+    left: 300px;
+}
+
+.box1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.box1:before {
+    content: '';
+    /* background: rgba(199,220,151,0.7);    */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: rotate(-180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* transition: all 0.1s ease 0s; */
+}
+
+.box1:hover:before {
+    opacity: 1;
+    transform: rotate(0);
+    /* transition: all 1s ease 0s; */
+    border-radius: 70px;
+}
+
+.box1 img {
+    width: 100%;
+    height: auto;
+}
+
+.box1 .box-content1 {
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: opacity 0.1s ease 0s, transform 0.1s ease 0s;
+}
+
+.box1:hover .box-content1 {
+    opacity: 0.6;
+    transform: translateX(-50%) translateY(-50%) rotate(0);
+    transition: all 1s ease 0s;
+}
+
+.box1 .title {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+
+.box1 .post {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+    display: block;
+}
+
+.box1 .icon1 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box1 .icon1 li {
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.box1 .icon1 li a {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 27px;
+    height: 27px;
+    width: 27px;
+    border: 1px solid #111;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.box1 .icon1 li a:hover {
+    color: #fff;
+    background: #111;
+    border-radius: 50%;
+}
+
+/* .imgportfolio {
+    opacity: 1.6;
+                  transition: opacity .55s ease-in-out;
+                  -moz-transition: opacity .55s ease-in-out;
+                  -webkit-transition: opacity .55s ease-in-out;
+}
+.imgportfolio:hover {
+    opacity: 0.6;
+                  transition: opacity .55s ease-in-out;
+                  -moz-transition: opacity .55s ease-in-out;
+                  -webkit-transition: opacity .55s ease-in-out;
+} */
+
+/********************************* Portfolio CSS Ends *************************************/
+
+/********************************* Web Development CSS Starts *************************************/
+
+/********************************* Web Development CSS Ends *************************************/
+
+.web-left {
+    content: "";
+    background: url('../img/web.png') no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    left: -639px;
+    top: 2800px;
+    display: inline-block;
+    width: 821px;
+    height: 839px;
+    z-index: -1;
+}
+
+.web-right {
+    content: "";
+    background: url(../img/imagebox.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    right: -250px;
+    top: 3000px;
+    display: inline-block;
+    width: 950px;
+    height: 1316px;
+    z-index: -1;
+}
+
+.emptyBox {
+    background: url(../img/banner.png);
+    width: 400px;
+    height: 400px;
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+.web-container {
+    /* margin-left: 500px; */
+    margin-top: -100px;
+}
+
+.web-title {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    text-align: right;
+}
+
+.web-content {
+    text-align: right;
+    font: 16px;
+    letter-spacing: 0.64px;
+    color: #8B8D9F;
+}
+.provider{
+    position: relative;
+    /* top: 3000px; */
+    /* left: 3000px; */
+}
+.provider > .imgprovider{
+    margin-top: -200px;
+    /* margin-left: -459px; */
+    /* margin-bottom: 200px; */
+    margin-right: 500px;
+    width: 401px !important;
+    height: 401px !important;
+    -webkit-mask-box-image: url('../img/banner-img.svg');
+    float: right;
+    background-color: darkblue;
+}
