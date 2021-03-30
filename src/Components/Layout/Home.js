@@ -2,9 +2,14 @@ import React from 'react'
 import Raw from '../Raw/Raw'
 import About from './About'
 import Banner from './Banner'
+import Footer from './Footer'
 import Header from './Header'
 import PortFolio from './Portfolio/Portfolio'
-import WebContent from './WebContent'
+import Teams from './Teams'
+import Testimonials from './Testimonials'
+import WhatWeProvide from './WhatWeProvide'
+import WhoWeAre from './WhoWeAre'
+
 
 const Home = () => {
     return (
@@ -14,7 +19,11 @@ const Home = () => {
                 <Banner/>
                 <About/>
                 <PortFolio/>
-                <WebContent/>
+                <WhatWeProvide/>
+                <WhoWeAre/>
+                <Testimonials/>
+                <Teams/>
+                {/* <Footer/> */}
                 {/* <Raw/> */}
             </div>
 

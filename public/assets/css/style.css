@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+
 * {
     margin: 0;
     padding: 0;
@@ -195,9 +197,9 @@ header::after {
 }
 
 .banner-image>.image-box {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-left: -659px;
-    margin-right: 200px;
+    /* margin-right: 200px; */
     width: 747px !important;
     height: 747px !important;
     -webkit-mask-box-image: url('../img/banner-img.svg');
@@ -243,7 +245,7 @@ header::after {
     transform: rotate(45deg);
     /* margin-bottom: 800px;
     margin-right: 300px; */
-    margin-left: 50px;
+    margin-left: 400px;
     margin-top: -50px;
     animation: 5s rotate infinite linear;
 }
@@ -359,17 +361,15 @@ header::after {
     color: white;
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     background-color: #03045E !important;
     color: white;
     background: url(../img/creat1.png) no-repeat;
-    /* width: 90px;
-    height: 90px; */
     display: block;
     margin: 0 auto;
-}
+} */
 
 .card-text {
     height: 80px;
@@ -378,7 +378,9 @@ header::after {
     letter-spacing: 0.56px;
     color: #8B8D9F;
 }
-
+.nav-tabs {
+    border-bottom: 0px solid #FFFFFF !important;
+}
 .card::before, .card::after {
     position: absolute;
     top: 0;
@@ -393,6 +395,20 @@ header::after {
     /* border-radius: 25px; */
 }
 
+a:hover{
+    text-decoration: none !important;
+    /* background-color: #03045E; */
+}
+/* bootstrap tabs */
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+    background-color: #03045E;
+  }
+  #exTab1 .tab-content {
+    /* color : white; */
+    /* background-color: #428bca; */
+    padding : 5px 15px;
+  }
 .card::before {
     transform-origin: left top;
 }
@@ -639,9 +655,7 @@ header::after {
 
 /********************************* Portfolio CSS Ends *************************************/
 
-/********************************* Web Development CSS Starts *************************************/
-
-/********************************* Web Development CSS Ends *************************************/
+/********************************* What We Provide CSS Starts *************************************/
 
 .web-left {
     content: "";
@@ -661,7 +675,7 @@ header::after {
     background: url(../img/imagebox.png) no-repeat left bottom;
     background-size: cover;
     position: absolute;
-    right: -250px;
+    right: -50px;
     top: 3000px;
     display: inline-block;
     width: 950px;
@@ -669,17 +683,22 @@ header::after {
     z-index: -1;
 }
 
+.whatweprovide {
+    margin-top: 400px;
+    margin-right: 60px;
+}
+
 .emptyBox {
     background: url(../img/banner.png);
     width: 400px;
     height: 400px;
-    margin-top: 300px;
+    margin-top: -100px;
     margin-left: 200px;
 }
 
 .web-container {
     /* margin-left: 500px; */
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 
 .web-title {
@@ -694,19 +713,485 @@ header::after {
     letter-spacing: 0.64px;
     color: #8B8D9F;
 }
-.provider{
+
+.provider {
     position: relative;
     /* top: 3000px; */
     /* left: 3000px; */
 }
-.provider > .imgprovider{
-    margin-top: -200px;
+
+.provider>.imgprovider {
+    margin-top: -100px;
     /* margin-left: -459px; */
     /* margin-bottom: 200px; */
-    margin-right: 500px;
+    /* margin-right: 500px; */
     width: 401px !important;
     height: 401px !important;
     -webkit-mask-box-image: url('../img/banner-img.svg');
     float: right;
     background-color: darkblue;
 }
+
+.divList {
+    /* list-style: none; */
+    text-align: right;
+    margin-right: 60px;
+    margin-top: -100px;
+    /* padding: 36px; */
+}
+
+.nobullet {
+    list-style-type: none;
+    /* padding: 36px; */
+}
+
+.listStyle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #060606;
+    padding: 36px;
+    cursor: pointer;
+}
+
+.listButton {
+    border-radius: 35px;
+    background: #03045E;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 299px;
+    height: 70px;
+}
+
+/********************************* What We Provide CSS Ends *************************************/
+
+/********************************* Who We Are CSS Starts *************************************/
+
+.left-triangle {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    margin-left: -658.005859375px;
+    margin-top: -50px;
+    display: inline-block;
+    width: 1317px;
+    height: 1361px;
+    /* z-index: -1; */
+}
+
+.whoweare {
+    margin-top: 200px;
+    margin-left: 60px;
+}
+
+.workwedo1 {
+    margin-top: 278px;
+}
+
+.workwedo2 {
+    margin-top: -520px;
+    margin-left: 600px;
+}
+
+.workwedo3 {
+    margin-top: -520px;
+    margin-left: 1200px;
+}
+
+.dash {
+    width: 1300px;
+    border-top: 5px solid #03045E;
+    /* opacity: 1;   */
+}
+
+.project-banner-white {
+    width: 274px;
+    height: 274px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 16px 33px 46px #00000029;
+    border: 1px solid #03045E;
+    border-radius: 50px;
+    opacity: 1;
+    margin-top: -250px;
+    margin-left: 80px;
+    /* z-index: 1; */
+}
+
+.project-banner-blue {
+    margin-left: 220px;
+    margin-top: -110px;
+    width: 211px;
+    height: 211px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    background: #03045E 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(45deg);
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.project-content {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+/********************************* Who We Are CSS Ends *************************************/
+
+
+/********************************* Testimonials CSS Starts *************************************/
+
+.right-triangle {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    right: -700px;
+    top: 4900px;
+    display: inline-block;
+    width: 1317px;
+    height: 1317px;
+    z-index: -1;
+}
+
+.testimonial {
+    margin-top: 150px;
+    margin-right: 60px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #1E88E5 !important;
+    border: none;
+    padding: 5px 20px !important;
+    font: inherit;
+    font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #0D47A1 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none
+}
+
+.next {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.prev {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.item.show {
+    display: block;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    .item {
+        display: block !important
+    }
+}
+/* .card {
+    margin: 0 auto;
+  }
+  .card .carousel-item {
+    height: 200px;
+  }
+  .card .carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    color: #3d3d3d;
+  }
+  .card .carousel-caption h3 {
+    color: #3d3d3d;
+  }
+  .card .carousel-caption p {
+    line-height: 30px;
+  }
+  .card .carousel-caption .col-sm-3 {
+    display: flex;
+    align-items: center;
+  }
+  .card .carousel-caption .col-sm-9 {
+    text-align: left;
+  }
+  .card .carousel-control-prev, .card .carousel-control-next {
+    color: #3d3d3d !important;
+    opacity: 1 !important;
+  } */
+/********************************* Testimonials CSS Ends *************************************/
+
+/********************************* Team CSS Starts *************************************/
+
+.left-teams {
+    content: "";
+    background: url(../img/left.png) no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    margin-left: -658.005859375px;
+    margin-top: -200px;
+    display: inline-block;
+    width: 1317px;
+    height: 1361px;
+    /* z-index: -1; */
+}
+.teams {
+    margin-top: 200px;
+    margin-left: 60px;
+}
+.team4 {
+    font-family: "Montserrat", sans-serif;
+      color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+    color: #3e4555;
+  }
+  
+  .team4 .font-weight-medium {
+      font-weight: 500;
+  }
+  
+  .team4 h5 {
+      line-height: 22px;
+      font-size: 18px;
+  }
+  
+  .team4 .subtitle {
+      color: #8d97ad;
+      line-height: 24px;
+          font-size: 13px;
+  }
+  
+  .team4 ul li a {
+    color: #8d97ad;
+    padding-right: 15px;
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+  }
+  
+  .team4 ul li a:hover {
+    -webkit-transform: translate3d(0px, -5px, 0px);
+    transform: translate3d(0px, -5px, 0px);
+      color: #316ce8;
+  }
+  .t1{
+      background: transparent url('../img/teams/t5.png') 0% 0% no-repeat padding-box;
+      width: 250px;
+      height: 170px;
+      margin-left: 60px;
+      object-fit: cover;
+      margin-top: 50px;
+  }
+  .t2{
+    background: transparent url('../img/teams/t1.png') 0% 0% no-repeat padding-box;
+    width: 150px;
+    height: 120px;
+    object-fit: contain;
+    /* margin-top: 50px; */
+    margin-left: 250px;
+}
+.t3{
+    background: transparent url('../img/teams/t2.png') 0% 0% no-repeat padding-box;
+    width: 171px;
+    height: 171px;
+    margin-left: 450px;
+    margin-top: -170px;
+}
+.t4{
+    background:  url('../img/teams/t8.png') 0% 0% no-repeat padding-box;
+    width: 170px;
+    height: 170px;
+    margin-left: 500px;
+    margin-top: -400px;
+}
+.t5{
+    background:  url('../img/teams/t4.png') 0% 0% no-repeat padding-box;
+    width: 125px;
+    height: 126px;
+    margin-left: 800px;
+    margin-top: 100px;
+}
+.t6{
+    background: transparent url('../img/teams/t3.png') 0% 0% no-repeat padding-box;
+    width: 270px;
+    height: 270px;
+    margin-left: 750px;
+    margin-top: -450px;
+}
+/********************************* Team CSS Ends *************************************/
+
+/********************************* Footer CSS Starts *************************************/
+
+.footer {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 1670px;
+    height: 360px;
+    margin-top: 300px;
+    background: #03045E 0% 0% no-repeat padding-box;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.logo-content {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.lineBeforeContent {
+    margin-top: 20px;
+    width: 4px;
+    height: 24px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.services {
+    margin-top: -25px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.service-list {
+    list-style-type: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 0.56px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.address {
+    color: #FFFFFF;
+    font-size: 17px;
+    letter-spacing: 0.56px;
+    cursor: pointer;
+}
+
+.contact {
+    color: #FFFFFF;
+    font-size: 17px;
+    letter-spacing: 0.56px;
+    cursor: pointer;
+}
+
+.email {
+    color: #FFFFFF;
+    font-size: 17px;
+    letter-spacing: 0.56px;
+    cursor: pointer;
+}
+
+.social-media {
+    color: #FFFFFF;
+    letter-spacing: 0.48px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.subscribe {
+    background: #03045E 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    width: 107px;
+    height: 37px;
+    color: #FFFFFF;
+}
+
+input[type="text"] {
+    width: 270px;
+    height: 45px;
+    padding-right: 50px;
+    border-radius: 31px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    margin-left: -120px;
+    width: 107px;
+    height: 37px;
+    background: blue;
+    color: white;
+    border: 0;
+    background: #03045E 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    -webkit-appearance: none;
+}
+
+.copyright {
+    margin-left:80px;
+    margin-right:60px;
+    width: 1500px;
+    height: 75px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 60px 60px 0px 0px;
+    opacity: 1;
+    letter-spacing: 0.44px;
+    font-size: 15px;
+}
+.termsNcondition{
+    float: right;
+    margin-top: -50px;
+    margin-right: 120px;
+    cursor: pointer;
+}
+
+/********************************* Footer CSS Ends *************************************/
