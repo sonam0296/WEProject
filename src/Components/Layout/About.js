@@ -1,8 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
+import $ from 'jquery';
 
 const About = () => {
-
-  const [content, setContent] = useState("")
+  useEffect(()=>{
+    $(function() {
+      $('#navigation a').click(function() {
+              $('#navigation a').removeClass('selected');
+              $(this).addClass('selected');
+          
+      });
+ 
+  });
+  })
   return (
     <>
       {/* Background Image */}
@@ -14,22 +23,22 @@ const About = () => {
         <div class="container-fluid" id="exTab1">
           {/* <div class="tabbable-panel">
             <div class="tabbable-line"> */}
-            <ul  class="nav nav-pills">
-                <li class="active">
-                  <div className="card item-card card-block border-0" id="p1" style={{ marginLeft: "100px" }}>
-                    <a href="#tab_default_1" data-toggle="tab" class="p1"><img src="assets/img/creat.png" alt="Photo of sunset" className="imageIcons" />
+            <ul  class="nav nav-pills" id="navigation">
+                <li className ="active" >
+                  <div className="card item-card card-block border-0 p1" id="sonam" style={{ marginLeft: "100px"}}>
+                    <a href="#tab_default_1" data-toggle="tab" ><img src="assets/img/creat.png" alt="Photo of sunset" className="imageIcons" />
                       <h5 className="item-card-title mt-3 mb-3 card-title">Imaginative Design</h5>
                       <p className="card-text">A perfect balance of innovative design and remarkable user experience</p></a>
                   </div>
                 </li>
-                <li>
-                  <div className="card item-card card-block border-0" style={{ marginTop: "350px", marginLeft: "-280px" }}>
+                <li class="">
+                  <div className="card item-card card-block border-0 p1"  style={{ marginTop: "350px", marginLeft: "-280px" }}>
                     <a href="#tab_default_2" data-toggle="tab">
                       <img src="assets/img/exp.png" alt="Photo of sunset" className="imageIcons" />
                       <h5 className="card-title  mt-3 mb-3">Incredible Experience</h5>
                       <p className="card-text">Give us the opportunity to unleash the WOW factor and leave you impressed!</p> </a>
                   </div></li>
-                <li><div className="card item-card card-block border-0" style={{ marginTop: "170px", marginLeft: "70px" }}>
+                <li><div className="card item-card card-block border-0 p1" style={{ marginTop: "170px", marginLeft: "70px" }}>
                   <a href="#tab_default_3" data-toggle="tab">
                     <img src="assets/img/int.png" alt="Photo of sunset" className="imageIcons" />
                     <h5 className="card-title  mt-3 mb-3">Intelligent Coding</h5>

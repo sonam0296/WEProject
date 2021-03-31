@@ -287,8 +287,13 @@ header::after {
     height: 1361px;
     /* z-index: -1; */
 }
-
-/* Make the image fully responsive */
+.selected{
+    background-color: blue;
+}
+/* .nav-tabs > div{
+    background-color: #03045E;
+} */
+/* Make the image fully responsive
 
 .carousel-inner img {
     width: 100%;
@@ -404,6 +409,7 @@ a:hover{
     border-radius: 0;
     background-color: #03045E;
   }
+
   #exTab1 .tab-content {
     /* color : white; */
     /* background-color: #428bca; */
@@ -1028,50 +1034,257 @@ button:focus {
     transform: translate3d(0px, -5px, 0px);
       color: #316ce8;
   }
-  .t1{
-      background: transparent url('../img/teams/t5.png') 0% 0% no-repeat padding-box;
+/* hover pop for t1 */
+.t1 {
+    position: relative;
+    display: inline-block;
+    background: transparent url('../img/teams/t5.png') 0% 0% no-repeat padding-box;
       width: 250px;
       height: 170px;
       margin-left: 60px;
-      object-fit: cover;
       margin-top: 50px;
   }
-  .t2{
+  
+  .t1 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t1:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /* hover pop for t1 */
+.t2 {
+    position: absolute;
+    display: inline-block;
     background: transparent url('../img/teams/t1.png') 0% 0% no-repeat padding-box;
     width: 150px;
     height: 120px;
     object-fit: contain;
     /* margin-top: 50px; */
     margin-left: 250px;
-}
-.t3{
+  }
+  
+  .t2 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t2:hover .tooltiptext {
+    visibility: visible;
+  }
+/* hover pop for t1 */
+.t3 {
+    position: relative;
+    display: inline-block;
     background: transparent url('../img/teams/t2.png') 0% 0% no-repeat padding-box;
     width: 171px;
     height: 171px;
-    margin-left: 450px;
-    margin-top: -170px;
-}
-.t4{
+    margin-left: 150px;
+    margin-top: 170px;
+  }
+  
+  .t3 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t3:hover .tooltiptext {
+    visibility: visible;
+  }
+/* hover pop for t1 */
+.t4 {
+    position: absolute;
+    display: inline-block;
     background:  url('../img/teams/t8.png') 0% 0% no-repeat padding-box;
     width: 170px;
     height: 170px;
-    margin-left: 500px;
-    margin-top: -400px;
-}
-.t5{
+    margin-left: -100px;
+    margin-top: -50px !important; 
+  }
+  
+  .t4 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t4:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* hover pop for t1 */
+.t5 {
+    position: absolute;
+    display: inline-block;
     background:  url('../img/teams/t4.png') 0% 0% no-repeat padding-box;
     width: 125px;
     height: 126px;
-    margin-left: 800px;
-    margin-top: 100px;
-}
-.t6{
+    margin-left: 150px;
+    margin-top: 200px !important;
+  }
+  
+  .t5 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t5:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* hover pop for t1 */
+.t6 {
+    position: absolute;
+    display: inline-block;
     background: transparent url('../img/teams/t3.png') 0% 0% no-repeat padding-box;
     width: 270px;
     height: 270px;
-    margin-left: 750px;
-    margin-top: -450px;
-}
+    margin-left: 100px;
+    margin-top: -100px;
+  }
+  
+  .t6 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t6:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* hover pop for t1 */
+.t7 {
+    position: relative;
+    display: inline-block;
+    background: transparent url('../img/teams/t7.png') 0% 0% no-repeat padding-box;
+    width: 220px;
+    height: 220px;
+    margin-left: 1100px;
+    margin-top: -250px;
+  }
+  
+  .t7 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t7:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /* hover pop for t1 */
+.t8 {
+    position: absolute;
+    display: inline-block;
+    background: transparent url('../img/teams/t6.png') 0% 0% no-repeat padding-box;
+    width: 220px;
+    height: 220px;
+    margin-left: -100px;
+    margin-top: -35430px ;
+  }
+  
+  .t8 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .t8:hover .tooltiptext {
+    visibility: visible;
+  }
 /********************************* Team CSS Ends *************************************/
 
 /********************************* Footer CSS Starts *************************************/
