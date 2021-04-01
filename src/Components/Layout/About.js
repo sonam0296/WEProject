@@ -2,16 +2,16 @@ import React, { useEffect } from 'react'
 import $ from 'jquery';
 
 const About = () => {
-  useEffect(()=>{
-    $(function() {
-      $('#navigation a').click(function() {
-              $('#navigation a').removeClass('selected');
-              $(this).addClass('selected');
+  // useEffect(()=>{
+  //   $(function() {
+  //     $('#navigation a').click(function() {
+  //             $('#navigation a').removeClass('selected');
+  //             $(this).addClass('selected');
           
-      });
- 
-  });
-  })
+  //     });
+  // });
+  // })
+  
   return (
     <>
       {/* Background Image */}

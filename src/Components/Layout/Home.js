@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from '../Raw/Image'
 import Raw from '../Raw/Raw'
 import About from './About'
 import Banner from './Banner'
@@ -24,6 +25,7 @@ const Home = () => {
                 <Testimonials/>
                 <Teams/>
                 <Footer/>
+                <Image/>
                 {/* <Raw/> */}
             </div>
 
