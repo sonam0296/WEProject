@@ -4,7 +4,7 @@ const PortFolioSlider = () => {
     return (
         <>
             <div className="left-rect"></div>
-            <div style={{ marginTop: "100px", marginLeft: "60px" }}>
+            <div style={{ marginTop: "100px", marginLeft: "0px" }}>
                 <div >
                     <a className="" href="#carouselExampleControls" role="button" data-slide="next"><img src="assets/img/greater.png" alt="" /></a>
                 </div>
@@ -13,7 +13,7 @@ const PortFolioSlider = () => {
                 </div>
             </div>
             <div className="container-fluid" style={{ marginTop: "-300px", }}>
-                <div className="row" style={{ marginLeft: "240px" }}>
+                <div className="row" style={{ marginLeft: "150px" }}>
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
@@ -22,10 +22,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img4.jpg" alt="" className="imgportfolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img4.jpg" alt="" className="imgportfolio" style={{ borderRadius: "70px", width: "300px", height: "300px",marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">ABC Roy</h3>
+                                                        <span class="post1">Web designer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -36,10 +36,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img7.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img7.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Jack C</h3>
+                                                        <span class="post">Web Developer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -50,10 +50,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img3.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img3.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Miranda Shah</h3>
+                                                        <span class="post">Customization</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -69,10 +69,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img5.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img5.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Sagar Singh</h3>
+                                                        <span class="post">Mobile Developer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -83,10 +83,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img4.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img4.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Mahesh Swant</h3>
+                                                        <span class="post">Web Developer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -97,10 +97,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img2.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img2.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Anisha Singh</h3>
+                                                        <span class="post">App designer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>
@@ -115,9 +115,23 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img3.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img3.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
+                                                        <h3 class="title1">Devendra Bhaije</h3>
+                                                        <span class="post">Mobile Developer</span>
+                                                        <ul class="icon1">
+                                                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="card1 my-2">
+                                                <div className="box1">
+                                                    <img src="assets/img/img5.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
+                                                    <div class="box-content1">
+                                                        <h3 class="title1">X. Y .Z </h3>
                                                         <span class="post">Web designer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
@@ -129,24 +143,10 @@ const PortFolioSlider = () => {
                                         <div className="col-sm-4">
                                             <div className="card1 my-2">
                                                 <div className="box1">
-                                                    <img src="assets/img/img5.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
+                                                    <img src="assets/img/img7.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "300px", height: "300px", marginLeft:"30px" }} />
                                                     <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
-                                                        <ul class="icon1">
-                                                            <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-sm-4">
-                                            <div className="card1 my-2">
-                                                <div className="box1">
-                                                    <img src="assets/img/img7.jpg" alt="" className="imgPortFolio" style={{ borderRadius: "70px", width: "450px", height: "400px" }} />
-                                                    <div class="box-content1">
-                                                        <h3 class="title1">Miranda Roy</h3>
-                                                        <span class="post">Web designer</span>
+                                                        <h3 class="title1">Ravi Sharma</h3>
+                                                        <span class="post">Full Stack Developer</span>
                                                         <ul class="icon1">
                                                             <li><a href="#"><i class="fa fa-link"></i></a></li>
                                                         </ul>

@@ -25,7 +25,7 @@ const About = () => {
             <div class="tabbable-line"> */}
             <ul  class="nav nav-pills" id="navigation">
                 <li className ="active" >
-                  <div className="card item-card card-block border-0 p1" id="sonam" style={{ marginLeft: "100px"}}>
+                  <div className="card item-card card-block border-0 p1"  style={{ marginLeft: "60px"}}>
                     <a href="#tab_default_1" data-toggle="tab" ><img src="assets/img/creat.png" alt="Photo of sunset" className="imageIcons" />
                       <h5 className="item-card-title mt-3 mb-3 card-title">Imaginative Design</h5>
                       <p className="card-text">A perfect balance of innovative design and remarkable user experience</p></a>
@@ -38,7 +38,7 @@ const About = () => {
                       <h5 className="card-title  mt-3 mb-3">Incredible Experience</h5>
                       <p className="card-text">Give us the opportunity to unleash the WOW factor and leave you impressed!</p> </a>
                   </div></li>
-                <li><div className="card item-card card-block border-0 p1" style={{ marginTop: "170px", marginLeft: "70px" }}>
+                <li><div className="card item-card card-block border-0 p1" style={{ marginTop: "170px", marginLeft: "40px" }}>
                   <a href="#tab_default_3" data-toggle="tab">
                     <img src="assets/img/int.png" alt="Photo of sunset" className="imageIcons" />
                     <h5 className="card-title  mt-3 mb-3">Intelligent Coding</h5>
@@ -48,7 +48,7 @@ const About = () => {
 
               </ul>
               {/* Content */}
-              <div className="tab-content" style={{ float: "right", marginTop: "-500px" }}>
+              <div className="tab-content" style={{ marginLeft:"700px", marginTop: "-500px" }}>
                 <div className="tab-pane active" id="tab_default_1">
                 <p style={{ fontSize: "34px" }}>Affordable and beautiful <strong style={{ color: "#03045E" }}>website1</strong> <br /> with remarkable results</p>
                     <p style={{ fontSize: "16px" }}>Webtech-Evolution is a dynamic and rapidly growing website development<br /> company that combines capability and devotion with your goals to achieve the perfect <br />end-result that makes your business profitable!</p>
@@ -109,7 +109,7 @@ const About = () => {
       <div className="banner-button">
         <a className="click1"><img src="assets/img/less.png" alt="" /></a>
         <a className="click2"><img src="assets/img/greater.png" alt="" /></a>
-        <h4 style={{ marginLeft: "700px", marginTop: "-50px", color: "#03045E   " }}>Read More...</h4>
+        <h4 style={{ marginLeft: "400px", marginTop: "-50px", color: "#03045E   ", fontSize:"16px" }}>Read More...</h4>
       </div>
 
       <div >

@@ -1,11 +1,17 @@
+import { Tab } from 'bootstrap'
 import React from 'react'
+import '../../App.css'
+import Demo from '../Tabs/TabContent'
+import SimpleTabs from '../Tabs/Tab'
+import FullWidthTabs from '../Tabs/Tab'
 import Image from '../Raw/Image'
 import Raw from '../Raw/Raw'
 import About from './About'
 import Banner from './Banner'
+import Clients from './Clients'
 import Footer from './Footer'
 import Header from './Header'
-import PortFolio from './Portfolio/Portfolio'
+import PortFolioSlider from './Portfolio/PortfolioSlider'
 import Teams from './Teams'
 import Testimonials from './Testimonials'
 import WhatWeProvide from './WhatWeProvide'
@@ -19,13 +25,19 @@ const Home = () => {
                 <Header />
                 <Banner/>
                 <About/>
-                <PortFolio/>
+                {/* <PortFolio/> */}
+                <SimpleTabs/> 
                 <WhatWeProvide/>
                 <WhoWeAre/>
                 <Testimonials/>
                 <Teams/>
+                <Clients/>
+                {/* <Demo/> */}
+                {/* <Tab/> */}
+                {/* <PortFolio/> */}
                 <Footer/>
-                <Image/>
+                {/* <Image/> */}
+              {/* <SimpleTabs/> */}
                 {/* <Raw/> */}
             </div>
 

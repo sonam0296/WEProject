@@ -1,10 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
         <>
         {/* Background Image */}
-            <div className="main-shape"></div>
             {/* Top NavBar */}
             <div className="top-head">
                 <ul>
@@ -20,34 +20,46 @@ const Header = () => {
 
 
             {/* Background Image */}
-            <div className="main-shape1"></div>    
+              
 
             {/* Logo Content Header */}
             <header>
-                <a className="navbar-brand" href="#">
+                <div className="row">
+                    <div className="col-md-3 col-sm-5 col-xs-4">
+            <div className="main-shape"></div>
+
+                    <a className="navbar-brand" href="#">
                     <img src="assets/img/logo.png" />
                 </a>
-                <nav className="navbar navbar-expand-lg custom_container" style={{marginTop:"-50px", marginRight:"70px"}}>
+                    </div>
+
+                    <div className="col-md-9 col-sm-7 col-xs-8">
+                    <div className="main-shape1"></div>  
+                    <nav className="navbar navbar-expand-lg custom_container" style={{marginTop:"100px", marginRight:"30px"}}>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto" >
                             <li className="nav-item active">
-                                <a className="nav-link mr-40" href="#">Home</a>
+                                <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-40" href="#">Who we are</a>
+                                <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>Who we are</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-40" href="#">What we do</a>
+                                <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>What we do</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-40" href="#">Portfolio</a>
+                                <Link className="nav-link mr-20" to="/portfolio" style={{fontSize:"16px"}}>Portfolio</Link>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link contact-btn" style={{ width: "181px", height: "47px", borderRadius: "24px " }}><a href="" style={{ textDecoration: "none" }}>Get in touch</a> </button>
+                                <button className="nav-link contact-btn" style={{ width: "181px", height: "47px", borderRadius: "24px " }}><Link to="/contact" style={{ textDecoration: "none" }}>Get in touch</Link> </button>
                             </li>
                         </ul>
                     </div>
                 </nav>
+                    </div>
+                </div>
+                
+                
             </header>
 
         </>
