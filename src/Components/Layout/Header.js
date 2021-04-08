@@ -42,10 +42,10 @@ const Header = () => {
                                 <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>Who we are</a>
+                                <Link className="nav-link mr-20" to="/about" style={{fontSize:"16px"}}>Who we are</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-20" href="#" style={{fontSize:"16px"}}>What we do</a>
+                                <Link className="nav-link mr-20" to="#" style={{fontSize:"16px"}}>What we do</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link mr-20" to="/portfolio" style={{fontSize:"16px"}}>Portfolio</Link>

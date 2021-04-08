@@ -42,7 +42,7 @@ const ContactHeader = () => {
                                 <a className="nav-link mr-20" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-20" href="#">Who we are</a>
+                                <Link className="nav-link mr-20" to="/about">Who we are</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link mr-20" href="#">What we do</a>
